@@ -77,5 +77,4 @@ const PatientRecordSchema = new mongoose.Schema({
     }
 }, {timestamps: true});
 
-const PatientRecordSchemaModel = mongoose.model('patients_record', PatientRecordSchema);
-module.exports = PatientRecordSchemaModel;
+module.exports = mongoose.model('patients_record', PatientRecordSchema);
